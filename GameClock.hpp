@@ -5,11 +5,12 @@
 class GameClock : public sf::Drawable
 {
 public:
-	GameClock(const bool);
+	GameClock();
 	~GameClock();
 
 	void			update(sf::Clock & clock);
 	bool			isDebugEnable() const;
+	void			setDebug(bool);
 	int				getFrameNumber() const;
 	int				getLastTotalFrame() const;
 	const sf::Color	&getColorOfDarkness() const;

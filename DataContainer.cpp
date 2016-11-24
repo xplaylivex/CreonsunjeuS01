@@ -3,10 +3,14 @@
 DataContainer *DataContainer::_instance;
 
 
-DataContainer::DataContainer() : map(NULL), keyboard(NULL), clock(true), load_manager(new LoadManager())
+DataContainer::DataContainer() : map(NULL), keyboard(NULL), load_manager(new LoadManager())
 {
 	this->config_lexer.openFile("config/general_config.conf");
 	this->config_lexer.process();
+
+	this->clock.setDebug(this->config_lexer.getNumberValue("SHOW_FPS") == 0 ? false : true);
+	this->sound_manager.setVolume(this->config_lexer.getNumberValue("SOUND_VOLUME"));
+	this->music_manager.setVolume(this->config_lexer.getNumberValue("MUSIC_VOLUME"));
 }
 
 DataContainer & DataContainer::operator=(const DataContainer &old_data)
@@ -17,7 +21,7 @@ DataContainer & DataContainer::operator=(const DataContainer &old_data)
 	return *this;
 }
 
-DataContainer::DataContainer(const DataContainer &old_data) : clock(true)
+DataContainer::DataContainer(const DataContainer &old_data)
 {
 	this->light.coord = old_data.light.coord;
 	this->map = old_data.map;
@@ -43,10 +47,11 @@ void		DataContainer::init(std::list<MapCase*> *list)
 {
 	this->window.create(
 		sf::VideoMode(this->config_lexer.getNumberValue("RESOLUTION_WIDTH"), this->config_lexer.getNumberValue("RESOLUTION_HEIGHT")),
-		WINDOW_NAME
+		WINDOW_NAME,
+		this->config_lexer.getNumberValue("FULLSCREEN_ENABLED")
 	);
 	this->map = new IsometricMap(list);
-	this->keyboard = new KeyboardManager();
+	this->keyboard = new KeyboardManager(this->config_lexer.getConfig());
 	this->main_character = new CharacterSprite();
 	//this->music_manager.play(MUSIC_DEFAULT);
 	this->_updateView();

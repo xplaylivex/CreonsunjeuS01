@@ -55,6 +55,30 @@
     <Filter Include="Fichiers d%27en-tête\Tools">
       <UniqueIdentifier>{88a22bf8-d5f5-49cd-9e89-9316edb58462}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\Menuing">
+      <UniqueIdentifier>{adec5e32-ea20-4c8e-9188-c4fff60d7a34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Menuing">
+      <UniqueIdentifier>{e7b6835f-93c8-4825-aec2-ce0d692fca5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Menuing\Abstract">
+      <UniqueIdentifier>{4587c35c-bd2b-43e8-9be1-ae45e4e94377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Menuing\Abstract">
+      <UniqueIdentifier>{082252be-1724-4d84-ad59-6dc3a9e8af79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Menuing\Elements">
+      <UniqueIdentifier>{f92a6e2d-b83e-44f6-98c7-6c5ba74da7b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Menuing\Windows">
+      <UniqueIdentifier>{37ac6ec7-1d50-49e4-a673-f5d1d592a3ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Menuing\Elements">
+      <UniqueIdentifier>{b18aae96-c0db-49dc-9919-67a9204b0712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Menuing\Windows">
+      <UniqueIdentifier>{6689aa82-abee-4cfb-9c55-17753f014be9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="assets\tiles\sol.jpg">
@@ -131,11 +155,74 @@
     <ClCompile Include="TextureLexer.cpp">
       <Filter>Fichiers sources\Core</Filter>
     </ClCompile>
-    <ClCompile Include="ConfigLexer.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="CoreController.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>Fichiers sources\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigLexer.cpp">
+      <Filter>Fichiers sources\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="AClickable.cpp">
+      <Filter>Fichiers sources\Menuing\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="AScrollable.cpp">
+      <Filter>Fichiers sources\Menuing\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="AInputable.cpp">
+      <Filter>Fichiers sources\Menuing\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="AWindow.cpp">
+      <Filter>Fichiers sources\Menuing\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="AButton.cpp">
+      <Filter>Fichiers sources\Menuing\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="ASelectable.cpp">
+      <Filter>Fichiers sources\Menuing\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuWindowAlert.cpp">
+      <Filter>Fichiers sources\Menuing\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuWindowDialog.cpp">
+      <Filter>Fichiers sources\Menuing\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuWindowEchap.cpp">
+      <Filter>Fichiers sources\Menuing\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuWindowFull.cpp">
+      <Filter>Fichiers sources\Menuing\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuColorSelect.cpp">
+      <Filter>Fichiers sources\Menuing\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuImage.cpp">
+      <Filter>Fichiers sources\Menuing\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuImageButton.cpp">
+      <Filter>Fichiers sources\Menuing\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuInput.cpp">
+      <Filter>Fichiers sources\Menuing\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuScrollbar.cpp">
+      <Filter>Fichiers sources\Menuing\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuSliderSelect.cpp">
+      <Filter>Fichiers sources\Menuing\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuText.cpp">
+      <Filter>Fichiers sources\Menuing\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuTextAndImageButton.cpp">
+      <Filter>Fichiers sources\Menuing\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuTextButton.cpp">
+      <Filter>Fichiers sources\Menuing\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuTextSelect.cpp">
+      <Filter>Fichiers sources\Menuing\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="AMenuArrow.cpp">
+      <Filter>Fichiers sources\Menuing\Elements</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -205,11 +292,74 @@
     <ClInclude Include="Tool.hpp">
       <Filter>Fichiers d%27en-tête\Tools</Filter>
     </ClInclude>
-    <ClInclude Include="ConfigLexer.hpp">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="CoreController.hpp">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>Fichiers d%27en-tête\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigLexer.hpp">
+      <Filter>Fichiers d%27en-tête\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="AClickable.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="AScrollable.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="AInputable.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="AWindow.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="AButton.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="ASelectable.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuWindowAlert.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuWindowDialog.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuWindowEchap.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuWindowFull.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuColorSelect.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuImageButton.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuInput.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuScrollbar.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuSliderSelect.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuTextAndImageButton.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuTextSelect.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuImage.h">
+      <Filter>Fichiers d%27en-tête\Menuing\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuText.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuTextButton.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="AMenuArrow.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Elements</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

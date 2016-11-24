@@ -162,8 +162,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AButton.cpp" />
     <ClCompile Include="ACharacter.cpp" />
+    <ClCompile Include="AClickable.cpp" />
     <ClCompile Include="AFileManager.cpp" />
+    <ClCompile Include="AInputable.cpp" />
+    <ClCompile Include="AMenuArrow.cpp" />
+    <ClCompile Include="AScrollable.cpp" />
+    <ClCompile Include="ASelectable.cpp" />
+    <ClCompile Include="AWindow.cpp" />
     <ClCompile Include="CharacterSprite.cpp" />
     <ClCompile Include="ConfigLexer.cpp" />
     <ClCompile Include="CoreController.cpp" />
@@ -177,6 +184,20 @@
     <ClCompile Include="LoadManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MapCase.cpp" />
+    <ClCompile Include="MenuColorSelect.cpp" />
+    <ClCompile Include="MenuImage.cpp" />
+    <ClCompile Include="MenuImageButton.cpp" />
+    <ClCompile Include="MenuInput.cpp" />
+    <ClCompile Include="MenuScrollbar.cpp" />
+    <ClCompile Include="MenuSliderSelect.cpp" />
+    <ClCompile Include="MenuText.cpp" />
+    <ClCompile Include="MenuTextAndImageButton.cpp" />
+    <ClCompile Include="MenuTextButton.cpp" />
+    <ClCompile Include="MenuTextSelect.cpp" />
+    <ClCompile Include="MenuWindowAlert.cpp" />
+    <ClCompile Include="MenuWindowDialog.cpp" />
+    <ClCompile Include="MenuWindowEchap.cpp" />
+    <ClCompile Include="MenuWindowFull.cpp" />
     <ClCompile Include="MusicManager.cpp" />
     <ClCompile Include="NPC.cpp" />
     <ClCompile Include="SaveManager.cpp" />
@@ -192,8 +213,15 @@
     <Image Include="assets\tiles\sol.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AButton.hpp" />
     <ClInclude Include="ACharacter.hpp" />
+    <ClInclude Include="AClickable.hpp" />
     <ClInclude Include="AFileManager.hpp" />
+    <ClInclude Include="AInputable.hpp" />
+    <ClInclude Include="AMenuArrow.hpp" />
+    <ClInclude Include="AScrollable.hpp" />
+    <ClInclude Include="ASelectable.hpp" />
+    <ClInclude Include="AWindow.hpp" />
     <ClInclude Include="CharacterSprite.hpp" />
     <ClInclude Include="ConfigLexer.hpp" />
     <ClInclude Include="CoreController.hpp" />
@@ -207,6 +235,20 @@
     <ClInclude Include="KeyboardManager.hpp" />
     <ClInclude Include="LoadManager.hpp" />
     <ClInclude Include="MapCase.hpp" />
+    <ClInclude Include="MenuColorSelect.hpp" />
+    <ClInclude Include="MenuImage.h" />
+    <ClInclude Include="MenuImageButton.hpp" />
+    <ClInclude Include="MenuInput.hpp" />
+    <ClInclude Include="MenuScrollbar.hpp" />
+    <ClInclude Include="MenuSliderSelect.hpp" />
+    <ClInclude Include="MenuText.hpp" />
+    <ClInclude Include="MenuTextAndImageButton.hpp" />
+    <ClInclude Include="MenuTextButton.hpp" />
+    <ClInclude Include="MenuTextSelect.hpp" />
+    <ClInclude Include="MenuWindowAlert.hpp" />
+    <ClInclude Include="MenuWindowDialog.hpp" />
+    <ClInclude Include="MenuWindowEchap.hpp" />
+    <ClInclude Include="MenuWindowFull.hpp" />
     <ClInclude Include="MusicManager.hpp" />
     <ClInclude Include="NPC.hpp" />
     <ClInclude Include="resource.h" />

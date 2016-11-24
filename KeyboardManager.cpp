@@ -1,6 +1,6 @@
 #include "KeyboardManager.hpp"
 
-KeyboardManager::KeyboardManager()
+KeyboardManager::KeyboardManager(const std::map<std::string, std::string> &config_map)
 {
 	this->string_mapping["Z"] = sf::Keyboard::Z;
 	this->string_mapping["Q"] = sf::Keyboard::Q;
@@ -13,22 +13,22 @@ KeyboardManager::KeyboardManager()
 	this->string_mapping["Escape"] = sf::Keyboard::Escape;
 	this->string_mapping["Plus"] = sf::Keyboard::Add;
 	this->string_mapping["Minus"] = sf::Keyboard::Subtract;
+	this->string_mapping["Numpad1"] = sf::Keyboard::Numpad1;
+	this->string_mapping["Numpad2"] = sf::Keyboard::Numpad2;
+	this->string_mapping["Numpad3"] = sf::Keyboard::Numpad3;
+	this->string_mapping["Numpad4"] = sf::Keyboard::Numpad4;
 
-	this->input_mapping[sf::Keyboard::Z] = FORWARD;
-	this->input_mapping[sf::Keyboard::Up] = FORWARD;
-	this->input_mapping[sf::Keyboard::S] = BACKWARD;
-	this->input_mapping[sf::Keyboard::Down] = BACKWARD;
-	this->input_mapping[sf::Keyboard::Q] = LEFT;
-	this->input_mapping[sf::Keyboard::Left] = LEFT;
-	this->input_mapping[sf::Keyboard::D] = RIGHT;
-	this->input_mapping[sf::Keyboard::Right] = RIGHT;
-	this->input_mapping[sf::Keyboard::Escape] = ESCAPE;
-	this->input_mapping[sf::Keyboard::Add] = PLUS;
-	this->input_mapping[sf::Keyboard::Subtract] = MINUS;
-	this->input_mapping[sf::Keyboard::Numpad1] = FIRE;
-	this->input_mapping[sf::Keyboard::Numpad2] = ICE;
-	this->input_mapping[sf::Keyboard::Numpad3] = ROCKET;
-	this->input_mapping[sf::Keyboard::Numpad4] = SLIME;
+	this->action_mapping["KEYBOARD_FORWARD"] = FORWARD;
+	this->action_mapping["KEYBOARD_BACKWARD"] = BACKWARD;
+	this->action_mapping["KEYBOARD_LEFT"] = LEFT;
+	this->action_mapping["KEYBOARD_RIGHT"] = RIGHT;
+	this->action_mapping["KEYBOARD_QUIT"] = ESCAPE;
+	this->action_mapping["KEYBOARD_ZOOM"] = PLUS;
+	this->action_mapping["KEYBOARD_UNZOOM"] = MINUS;
+	this->action_mapping["KEYBOARD_ATTACK_1"] = FIRE;
+	this->action_mapping["KEYBOARD_ATTACK_2"] = ICE;
+	this->action_mapping["KEYBOARD_ATTACK_3"] = ROCKET;
+	this->action_mapping["KEYBOARD_ATTACK_4"] = SLIME;
 
 	this->process_method_map[FORWARD] = &KeyboardManager::moveForward;
 	this->process_method_map[BACKWARD] = &KeyboardManager::moveBackward;
@@ -41,6 +41,10 @@ KeyboardManager::KeyboardManager()
 	this->process_method_map[ICE] = &KeyboardManager::ice;
 	this->process_method_map[ROCKET] = &KeyboardManager::rocket;
 	this->process_method_map[SLIME] = &KeyboardManager::slime;
+
+	for (std::map<std::string, std::string>::const_iterator it = config_map.begin(); it != config_map.end(); ++it) {
+		this->setActionToKey(it->first, it->second);
+	}
 }
 
 KeyboardManager::~KeyboardManager()
@@ -82,6 +86,21 @@ std::list<KeyConstants> KeyboardManager::getActions() const
 	return this->actions;
 }
 
+void KeyboardManager::setActionToKey(const std::string &action, const std::string &key)
+{
+	sf::Keyboard::Key key_found = this->getKey(key);
+	KeyConstants action_found = this->getAction(action);
+
+	if (key_found == sf::Keyboard::Home || action_found == NOTHING) {
+		return;
+	}
+	this->input_mapping[key_found] = action_found;
+}
+
+/**
+ * PRIVATE
+ */
+
 sf::Keyboard::Key KeyboardManager::getKey(const std::string &key) const
 {
 	std::map<std::string, sf::Keyboard::Key>::const_iterator it = this->string_mapping.find(key);
@@ -91,8 +110,16 @@ sf::Keyboard::Key KeyboardManager::getKey(const std::string &key) const
 	return sf::Keyboard::Home;
 }
 
+KeyConstants KeyboardManager::getAction(const std::string &key) const
+{
+	std::map<std::string, KeyConstants>::const_iterator it = this->action_mapping.find(key);
+	if (it != this->action_mapping.end()) {
+		return it->second;
+	}
+	return NOTHING;
+}
+
 /**
- * Private
  * Method for the method pointer
  */
 

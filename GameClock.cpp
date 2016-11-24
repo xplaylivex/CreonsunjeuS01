@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-GameClock::GameClock(const bool debug) : is_paused(false), _debug(debug), _time(0), _total_time(0), _frame(0), _lastTotalFrame(std::numeric_limits<int>::max()), _darkness_of_day(sf::Color::White)
+GameClock::GameClock() : is_paused(false), _debug(false), _time(0), _total_time(0), _frame(0), _lastTotalFrame(std::numeric_limits<int>::max()), _darkness_of_day(sf::Color::White)
 {
 	if (!this->_font.loadFromFile("arial.ttf")) {
 		std::cerr << "Error while opening the font for debug" << std::endl;
@@ -38,7 +38,6 @@ void		GameClock::update(sf::Clock &clock) {
 		this->_time = 0.0f;
 	}
 
-	//x1000 To get seconds
 	if ((int)(this->_total_time) % 10 == 0) {
 		this->updateDayStatus();
 	}
@@ -47,6 +46,11 @@ void		GameClock::update(sf::Clock &clock) {
 bool GameClock::isDebugEnable() const
 {
 	return this->_debug;
+}
+
+void GameClock::setDebug(bool enabled)
+{
+	this->_debug = enabled;
 }
 
 int GameClock::getFrameNumber() const
@@ -66,12 +70,14 @@ const sf::Color & GameClock::getColorOfDarkness() const
 
 void GameClock::draw(sf::RenderTarget & target, sf::RenderStates states) const
 {
-	sf::View	v = target.getView();
+	if (this->isDebugEnable()) {
+		sf::View	v = target.getView();
 
-	target.setView(this->_view);
-	target.draw(this->_text);
+		target.setView(this->_view);
+		target.draw(this->_text);
 
-	target.setView(v);
+		target.setView(v);
+	}
 }
 
 void GameClock::updateDayStatus()

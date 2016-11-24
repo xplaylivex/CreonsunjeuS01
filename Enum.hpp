@@ -4,7 +4,8 @@
 #include <map>
 
 enum KeyConstants {
-	FORWARD = 1,
+	NOTHING = 0,
+	FORWARD,
 	BACKWARD,
 	LEFT,
 	RIGHT,
@@ -30,7 +31,7 @@ enum MusicConstants {
 	MUSIC_DEFAULT
 };
 
-extern SoundConstants	sound_constants[];
-extern std::string		sound_filename_constants[];
-extern MusicConstants	music_constants[];
-extern std::string		music_filename_constants[];
+extern SoundConstants							sound_constants[];
+extern std::string								sound_filename_constants[];
+extern MusicConstants							music_constants[];
+extern std::string								music_filename_constants[];

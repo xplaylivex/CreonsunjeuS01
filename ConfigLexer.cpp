@@ -1,11 +1,28 @@
 #include "ConfigLexer.hpp"
 
+#include <iostream>
+
 ConfigLexer::ConfigLexer()
 {
 	const std::vector<sf::VideoMode> &video_modes = sf::VideoMode::getFullscreenModes();
 
 	this->_config["RESOLUTION_WIDTH"] = std::to_string(video_modes.front().width);
 	this->_config["RESOLUTION_HEIGHT"] = std::to_string(video_modes.front().height);
+	this->_config["FULLSCREEN_ENABLED"] = std::to_string(sf::Style::Fullscreen);
+	this->_config["KEYBOARD_FORWARD"] = "Z";
+	this->_config["KEYBOARD_BACKWARD"] = "S";
+	this->_config["KEYBOARD_LEFT"] = "Q";
+	this->_config["KEYBOARD_RIGHT"] = "D";
+	this->_config["KEYBOARD_QUIT"] = "Escape";
+	this->_config["KEYBOARD_ZOOM"] = "Plus";
+	this->_config["KEYBOARD_UNZOOM"] = "Minus";
+	this->_config["KEYBOARD_ATTACK_1"] = "Numpad1";
+	this->_config["KEYBOARD_ATTACK_2"] = "Numpad2";
+	this->_config["KEYBOARD_ATTACK_3"] = "Numpad3";
+	this->_config["KEYBOARD_ATTACK_4"] = "Numpad4";
+	this->_config["SHOW_FPS"] = "0";
+	this->_config["MUSIC_VOLUME"] = "100";
+	this->_config["SOUND_VOLUME"] = "100";
 }
 
 ConfigLexer::~ConfigLexer()
@@ -54,4 +71,9 @@ int ConfigLexer::getNumberValue(const std::string key)
 		return std::stoi(it->second);
 	}
 	return 0;
+}
+
+const std::map<std::string, std::string> &ConfigLexer::getConfig() const
+{
+	return this->_config;
 }

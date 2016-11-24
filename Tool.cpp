@@ -88,7 +88,6 @@ namespace Tool {
 		return color;
 	}
 
-
 	bool isInBoundDataCoord(const sf::Vector2i &position, const sf::Vector2i &min_position, const sf::Vector2i &max_position)
 	{
 		return (position.x > min_position.x && position.y > min_position.y && position.x < max_position.x && position.y < max_position.y);

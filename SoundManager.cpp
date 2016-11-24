@@ -21,6 +21,7 @@ void SoundManager::play(SoundConstants sound_to_play)
 {
 	sf::Sound *sound = new sf::Sound;
 
+	sound->setVolume(this->_volume);
 	sound->setBuffer(*(this->_soundBuffer_pool[sound_to_play]));
 	this->_sound_pool.push_back(sound);
 	sound->play();
@@ -45,4 +46,12 @@ void SoundManager::update()
 bool SoundManager::isPlaying(SoundConstants sound_to_play)
 {
 	return this->_currently_played.find(sound_to_play) != this->_currently_played.end();
+}
+
+void SoundManager::setVolume(int level)
+{
+	this->_volume = std::max(0, std::min(100, level));
+	for (std::list<sf::Sound *>::iterator it = this->_sound_pool.begin(); it != this->_sound_pool.end(); ++it) {
+		(*it)->setVolume(this->_volume);
+	}
 }
