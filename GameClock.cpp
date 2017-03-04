@@ -11,11 +11,11 @@ GameClock::GameClock() : is_paused(false), _debug(false), _time(0), _total_time(
 	this->_text.setFont(this->_font);
 	this->_text.setCharacterSize(20);
 	this->_text.setFillColor(sf::Color::White);
-	this->_view.setCenter(0, 0);
 	this->_text.setPosition(-75, -25);
+	this->_text.setString("--- FPS");
+	this->_view.setCenter(0, 0);
 	this->_view.setSize(200, 50);
 	this->_view.setViewport(sf::FloatRect(0.0f, 0.0f, 0.13f, 0.05f));
-	this->_text.setString("--- FPS");
 }
 
 GameClock::~GameClock()

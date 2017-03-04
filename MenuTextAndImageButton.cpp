@@ -1,7 +1,5 @@
 #include "MenuTextAndImageButton.hpp"
 
-
-
 MenuTextAndImageButton::MenuTextAndImageButton()
 {
 }

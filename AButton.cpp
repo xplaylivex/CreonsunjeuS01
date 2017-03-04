@@ -1,11 +1,8 @@
 #include "AButton.hpp"
 
-
-
-AButton::AButton()
+AButton::AButton() : ABasicElement(FLAG_EVENT::CLICKABLE)
 {
 }
-
 
 AButton::~AButton()
 {

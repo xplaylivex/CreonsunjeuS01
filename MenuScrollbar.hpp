@@ -1,5 +1,7 @@
 #pragma once
-class MenuScrollbar
+#include "ABasicElement.hpp"
+
+class MenuScrollbar : public ABasicElement
 {
 public:
 	MenuScrollbar();

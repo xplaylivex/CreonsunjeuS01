@@ -1,7 +1,7 @@
 #pragma once
-#include "ASelectable.hpp"
+#include "ABasicElement.hpp"
 
-class MenuSliderSelect : public ASelectable
+class MenuSliderSelect : public ABasicElement
 {
 public:
 	MenuSliderSelect();

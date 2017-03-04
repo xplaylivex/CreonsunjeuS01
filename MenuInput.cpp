@@ -2,7 +2,7 @@
 
 
 
-MenuInput::MenuInput()
+MenuInput::MenuInput() : ABasicElement(FLAG_EVENT::INPUTABLE)
 {
 }
 

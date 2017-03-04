@@ -15,7 +15,20 @@ class MapCase;
 #define TEXTURE_SET_NAME "SET_NAME="
 #define WINDOW_NAME "Creons un jeu S01"
 
+#define HEIGHT_DIALOG_PERCENTAGE		20
+#define WIDTH_DIALOG_TEXT_PERCENTAGE	50
+#define HEIGHT_DIALOG_TEXT_PERCENTAGE	14
+#define OFFSETX_DIALOG_TEXT_PERCENTAGE	25
+#define OFFSETY_DIALOG_TEXT_PERCENTAGE	83
+#define HEIGHT_DIALOG_IMAGE_PERCENTAGE	16
+#define WIDTH_DIALOG_IMAGE_PERCENTAGE	16
+#define OFFSETX_DIALOG_IMAGE_PERCENTAGE	4.5f
+#define OFFSETY_DIALOG_IMAGE_PERCENTAGE	82
+
 #define M_PI 3.14159265358979323846
+
+#define WINDOW_DEFAULT		0
+#define WINDOW_TO_DELETE	1
 
 namespace Tool
 {
@@ -31,6 +44,12 @@ namespace Tool
 	// Numeric operations
 	float			abs(const float &);
 	float			getPercentageDarknessFromTime(const float &);
+	float			getHeightDialogWindow();
+	sf::Vector2i	getSizeDialogWindowText();
+	sf::Vector2i	getPositionDialogWindowText();
+	sf::Vector2f	getSizeDialogWindowImage();
+	sf::Vector2f	getPositionDialogWindowFirstImage();
+	sf::Vector2f	getPositionDialogWindowSecondImage();
 
 	// Calculate
 	sf::Vector2f	calcSizeAfterRotation(const float &, const float &, const float &);

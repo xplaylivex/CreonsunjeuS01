@@ -58,6 +58,51 @@ namespace Tool {
 		return (-cos(M_PI * time / DAY_DURATION_SECONDS) + 1);
 	}
 
+	float getHeightDialogWindow()
+	{
+		return (DataContainer::getInstance()->window.getSize().y * HEIGHT_DIALOG_PERCENTAGE / 100);
+	}
+
+	sf::Vector2i getSizeDialogWindowText()
+	{
+		return sf::Vector2i(
+			DataContainer::getInstance()->window.getSize().x * WIDTH_DIALOG_TEXT_PERCENTAGE / 100,
+			DataContainer::getInstance()->window.getSize().y * HEIGHT_DIALOG_TEXT_PERCENTAGE / 100
+		);
+	}
+
+	sf::Vector2i getPositionDialogWindowText()
+	{
+		return sf::Vector2i(
+			DataContainer::getInstance()->window.getSize().x * OFFSETX_DIALOG_TEXT_PERCENTAGE / 100,
+			DataContainer::getInstance()->window.getSize().y * OFFSETY_DIALOG_TEXT_PERCENTAGE / 100
+		);
+	}
+
+	sf::Vector2f getSizeDialogWindowImage()
+	{
+		return sf::Vector2f(
+			DataContainer::getInstance()->window.getSize().x * WIDTH_DIALOG_IMAGE_PERCENTAGE / 100.f,
+			DataContainer::getInstance()->window.getSize().y * HEIGHT_DIALOG_IMAGE_PERCENTAGE / 100.f
+			);
+	}
+
+	sf::Vector2f getPositionDialogWindowFirstImage()
+	{
+		return sf::Vector2f(
+			DataContainer::getInstance()->window.getSize().x * OFFSETX_DIALOG_IMAGE_PERCENTAGE / 100.f,
+			DataContainer::getInstance()->window.getSize().y * OFFSETY_DIALOG_IMAGE_PERCENTAGE / 100.f
+		);
+	}
+
+	sf::Vector2f getPositionDialogWindowSecondImage()
+	{
+		return sf::Vector2f(
+			DataContainer::getInstance()->window.getSize().x * (OFFSETX_DIALOG_IMAGE_PERCENTAGE + OFFSETX_DIALOG_TEXT_PERCENTAGE + WIDTH_DIALOG_TEXT_PERCENTAGE) / 100.f,
+			DataContainer::getInstance()->window.getSize().y * OFFSETY_DIALOG_IMAGE_PERCENTAGE / 100.f
+		);
+	}
+
 	sf::Vector2f calcSizeAfterRotation(const float &width, const float &height, const float &angle_deg)
 	{
 		return sf::Vector2f(

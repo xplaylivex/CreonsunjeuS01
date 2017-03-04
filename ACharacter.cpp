@@ -1,6 +1,6 @@
 #include "ACharacter.hpp"
 
-ACharacter::ACharacter() : IObject("assets/orientation.png")
+ACharacter::ACharacter() : IObject("assets/orientation.png"), _picture(new sf::Texture())
 {
 	sf::Vector2u size_texture = this->_texture_character.getSize();
 	if ((size_texture.x / 3) / (float)(SIZE_TILE_X) > 1.0f || (size_texture.y / 3) / (float)(SIZE_TILE_Y) > 1.0f) {
@@ -12,6 +12,9 @@ ACharacter::ACharacter() : IObject("assets/orientation.png")
 	this->_character_sprite.setTexture(this->_texture_character);
 	this->_character_sprite.setTextureRect(sf::IntRect(size_texture.x / 3 * 2, size_texture.y / 3 * 2, size_texture.x / 3, size_texture.y / 3));
 	this->_character_sprite.setScale(this->_currentScale);
+
+	// FOR TEST
+	this->_picture->loadFromFile("assets/Pip.png");
 }
 
 ACharacter::~ACharacter()
@@ -32,7 +35,14 @@ void ACharacter::move(const sf::Vector2f &coord)
 sf::Vector2u ACharacter::getSizeTexture() const
 {
 	sf::Vector2u size = this->_texture_character.getSize();
+
 	size.x /= 3;
 	size.y /= 3;
+
 	return size;
+}
+
+sf::Texture *ACharacter::getPicture()
+{
+	return this->_picture;
 }

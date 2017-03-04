@@ -1,7 +1,7 @@
 #pragma once
-#include "ASelectable.hpp"
+#include "ABasicElement.hpp"
 
-class MenuColorSelect : public ASelectable
+class MenuColorSelect : public ABasicElement
 {
 public:
 	MenuColorSelect();

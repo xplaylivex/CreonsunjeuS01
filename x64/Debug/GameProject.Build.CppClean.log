@@ -1,37 +1,74 @@
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\vc140.pdb
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\vc140.idb
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\acharacter.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\afilemanager.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\charactersprite.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\datacontainer.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\gameclock.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\globallight.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\isometricmap.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\keyboardmanager.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\loadmanager.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\main.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\mapcase.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\musicmanager.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\npc.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\savemanager.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\savemapcase.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\soundmanager.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\utils.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\texturemanager.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\tool.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\aobject.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\item.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\iobject.obj
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\texturelexer.obj
-f:\shared files for virtualbox\gameproject\gameproject\x64\debug\gameproject.ilk
-f:\shared files for virtualbox\gameproject\gameproject\x64\debug\gameproject.exe
-f:\shared files for virtualbox\gameproject\gameproject\x64\debug\gameproject.pdb
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\cl.command.1.tlog
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\cl.read.1.tlog
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\cl.write.1.tlog
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\link.command.1.tlog
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\link.read.1.tlog
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\link.write.1.tlog
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\rc.command.1.tlog
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\rc.read.1.tlog
-f:\shared files for virtualbox\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\rc.write.1.tlog
+f:\prog\gameproject\gameproject\gameproject\x64\debug\vc140.pdb
+f:\prog\gameproject\gameproject\gameproject\x64\debug\vc140.idb
+f:\prog\gameproject\gameproject\gameproject\x64\debug\menumanager.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\menuscrollbar.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\menusliderselect.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\menutext.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\menutextandimagebutton.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\menutextbutton.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\menutextselect.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\menuwindowalert.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\menuwindowdialog.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\menuwindowechap.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\menuwindowfull.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\musicmanager.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\npc.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\savemanager.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\savemapcase.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\soundmanager.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\texturelexer.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\utils.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\texturemanager.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\tool.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\aselectable.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\awindow.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\charactersprite.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\configlexer.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\corecontroller.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\datacontainer.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\gameclock.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\globallight.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\inputstorage.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\iobject.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\isometricmap.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\item.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\keyboardmanager.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\loadmanager.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\main.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\mapcase.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\menucolorselect.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\menuimage.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\menuimagebutton.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\menuinput.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\abutton.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\acharacter.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\aclickable.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\aclickinputable.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\afilemanager.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\ainputable.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\amenuarrow.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\abasicelement.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\ascrollable.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\clickable.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\inputable.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\scrollable.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\selectable.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\closedwindow.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\atrigger.obj
+f:\prog\gameproject\gameproject\gameproject\x64\debug\gameproject.res
+f:\prog\gameproject\gameproject\x64\debug\gameproject.pdb
+f:\prog\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\cl.command.1.tlog
+f:\prog\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\cl.read.1.tlog
+f:\prog\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\cl.write.1.tlog
+f:\prog\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\link.5500-cvtres.read.1.tlog
+f:\prog\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\link.5500-cvtres.write.1.tlog
+f:\prog\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\link.5500-rc.read.1.tlog
+f:\prog\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\link.5500-rc.write.1.tlog
+f:\prog\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\link.5500.read.1.tlog
+f:\prog\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\link.5500.write.1.tlog
+f:\prog\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\link.command.1.tlog
+f:\prog\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\link.read.1.tlog
+f:\prog\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\link.write.1.tlog
+f:\prog\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\rc.command.1.tlog
+f:\prog\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\rc.read.1.tlog
+f:\prog\gameproject\gameproject\gameproject\x64\debug\gameproject.tlog\rc.write.1.tlog

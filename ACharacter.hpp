@@ -11,6 +11,12 @@ class ACharacter : public IObject
 public:
 	ACharacter();
 	virtual ~ACharacter();
-	virtual void	move(const sf::Vector2f & coord);
-	sf::Vector2u getSizeTexture() const;
+
+public:
+	virtual void			move(const sf::Vector2f & coord);
+	sf::Vector2u			getSizeTexture() const;
+	virtual sf::Texture		*getPicture();
+
+private:
+	sf::Texture				*_picture;
 };

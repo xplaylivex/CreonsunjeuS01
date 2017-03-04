@@ -79,6 +79,12 @@
     <Filter Include="Fichiers d%27en-tête\Menuing\Windows">
       <UniqueIdentifier>{6689aa82-abee-4cfb-9c55-17753f014be9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\Menuing\Triggers">
+      <UniqueIdentifier>{2d4485ef-471d-4b90-ab72-4e59e38a26d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Menuing\Triggers">
+      <UniqueIdentifier>{e6047cae-6e99-41b1-a8b7-61eb80d92125}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="assets\tiles\sol.jpg">
@@ -161,22 +167,7 @@
     <ClCompile Include="ConfigLexer.cpp">
       <Filter>Fichiers sources\Tools</Filter>
     </ClCompile>
-    <ClCompile Include="AClickable.cpp">
-      <Filter>Fichiers sources\Menuing\Abstract</Filter>
-    </ClCompile>
-    <ClCompile Include="AScrollable.cpp">
-      <Filter>Fichiers sources\Menuing\Abstract</Filter>
-    </ClCompile>
-    <ClCompile Include="AInputable.cpp">
-      <Filter>Fichiers sources\Menuing\Abstract</Filter>
-    </ClCompile>
-    <ClCompile Include="AWindow.cpp">
-      <Filter>Fichiers sources\Menuing\Abstract</Filter>
-    </ClCompile>
     <ClCompile Include="AButton.cpp">
-      <Filter>Fichiers sources\Menuing\Abstract</Filter>
-    </ClCompile>
-    <ClCompile Include="ASelectable.cpp">
       <Filter>Fichiers sources\Menuing\Abstract</Filter>
     </ClCompile>
     <ClCompile Include="MenuWindowAlert.cpp">
@@ -223,6 +214,36 @@
     </ClCompile>
     <ClCompile Include="AMenuArrow.cpp">
       <Filter>Fichiers sources\Menuing\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="ABasicElement.cpp">
+      <Filter>Fichiers sources\Menuing\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuManager.cpp">
+      <Filter>Fichiers sources\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="InputStorage.cpp">
+      <Filter>Fichiers sources\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="ATrigger.cpp">
+      <Filter>Fichiers sources\Menuing\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="Clickable.cpp">
+      <Filter>Fichiers sources\Menuing\Triggers</Filter>
+    </ClCompile>
+    <ClCompile Include="ClosedWindow.cpp">
+      <Filter>Fichiers sources\Menuing\Triggers</Filter>
+    </ClCompile>
+    <ClCompile Include="Inputable.cpp">
+      <Filter>Fichiers sources\Menuing\Triggers</Filter>
+    </ClCompile>
+    <ClCompile Include="Scrollable.cpp">
+      <Filter>Fichiers sources\Menuing\Triggers</Filter>
+    </ClCompile>
+    <ClCompile Include="Selectable.cpp">
+      <Filter>Fichiers sources\Menuing\Triggers</Filter>
+    </ClCompile>
+    <ClCompile Include="AWindow.cpp">
+      <Filter>Fichiers sources\Menuing\Abstract</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -298,22 +319,7 @@
     <ClInclude Include="ConfigLexer.hpp">
       <Filter>Fichiers d%27en-tête\Tools</Filter>
     </ClInclude>
-    <ClInclude Include="AClickable.hpp">
-      <Filter>Fichiers d%27en-tête\Menuing\Abstract</Filter>
-    </ClInclude>
-    <ClInclude Include="AScrollable.hpp">
-      <Filter>Fichiers d%27en-tête\Menuing\Abstract</Filter>
-    </ClInclude>
-    <ClInclude Include="AInputable.hpp">
-      <Filter>Fichiers d%27en-tête\Menuing\Abstract</Filter>
-    </ClInclude>
-    <ClInclude Include="AWindow.hpp">
-      <Filter>Fichiers d%27en-tête\Menuing\Abstract</Filter>
-    </ClInclude>
     <ClInclude Include="AButton.hpp">
-      <Filter>Fichiers d%27en-tête\Menuing\Abstract</Filter>
-    </ClInclude>
-    <ClInclude Include="ASelectable.hpp">
       <Filter>Fichiers d%27en-tête\Menuing\Abstract</Filter>
     </ClInclude>
     <ClInclude Include="MenuWindowAlert.hpp">
@@ -349,9 +355,6 @@
     <ClInclude Include="MenuTextSelect.hpp">
       <Filter>Fichiers d%27en-tête\Menuing\Elements</Filter>
     </ClInclude>
-    <ClInclude Include="MenuImage.h">
-      <Filter>Fichiers d%27en-tête\Menuing\Elements</Filter>
-    </ClInclude>
     <ClInclude Include="MenuText.hpp">
       <Filter>Fichiers d%27en-tête\Menuing\Elements</Filter>
     </ClInclude>
@@ -360,6 +363,39 @@
     </ClInclude>
     <ClInclude Include="AMenuArrow.hpp">
       <Filter>Fichiers d%27en-tête\Menuing\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="ABasicElement.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuImage.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuManager.hpp">
+      <Filter>Fichiers d%27en-tête\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="InputStorage.hpp">
+      <Filter>Fichiers d%27en-tête\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="ATrigger.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="Clickable.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Triggers</Filter>
+    </ClInclude>
+    <ClInclude Include="ClosedWindow.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Triggers</Filter>
+    </ClInclude>
+    <ClInclude Include="Inputable.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Triggers</Filter>
+    </ClInclude>
+    <ClInclude Include="Scrollable.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Triggers</Filter>
+    </ClInclude>
+    <ClInclude Include="Selectable.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Triggers</Filter>
+    </ClInclude>
+    <ClInclude Include="AWindow.hpp">
+      <Filter>Fichiers d%27en-tête\Menuing\Abstract</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

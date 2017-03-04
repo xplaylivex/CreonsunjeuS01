@@ -1,7 +1,7 @@
 #pragma once
-#include "AClickable.hpp"
+#include "ABasicElement.hpp"
 
-class AButton : public AClickable
+class AButton : public ABasicElement
 {
 public:
 	AButton();

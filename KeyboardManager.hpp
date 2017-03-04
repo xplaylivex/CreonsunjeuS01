@@ -15,7 +15,7 @@ public:
 	KeyboardManager(const std::map<std::string, std::string> &);
 	~KeyboardManager();
 
-	void		eventStorage(const sf::Event &);
+	void		eventStorage(const std::list<sf::Event> &event_list);
 	void		eventInterpreter();
 
 	std::list<KeyConstants> getActions() const;

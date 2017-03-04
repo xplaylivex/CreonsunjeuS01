@@ -19,11 +19,6 @@ void IObject::update(const sf::Color &color)
 {
 	sf::Color shadow = DataContainer::getInstance()->clock.getColorOfDarkness() - color;
 
-	if (shadow.r < 180) {
-		std::cout << this->_currentCase->id << std::endl;
-		std::cout << (int)color.r << ", " << (int)color.g << ", " << (int)color.b << std::endl;
-	}
-
 	this->_character_sprite.setColor(shadow);
 }
 

@@ -75,8 +75,6 @@ void DataContainer::draw()
 	if (this->clock.isDebugEnable()) {
 		this->window.draw(this->clock);
 	}
-
-	this->window.display();
 }
 
 void DataContainer::update()

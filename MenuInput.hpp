@@ -1,8 +1,7 @@
 #pragma once
-#include "AClickable.hpp"
-#include "AInputable.hpp"
+#include "ABasicElement.hpp"
 
-class MenuInput : public AClickable, public AInputable
+class MenuInput : public ABasicElement
 {
 public:
 	MenuInput();

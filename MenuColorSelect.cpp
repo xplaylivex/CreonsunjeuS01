@@ -1,8 +1,6 @@
 #include "MenuColorSelect.hpp"
 
-
-
-MenuColorSelect::MenuColorSelect()
+MenuColorSelect::MenuColorSelect() : ABasicElement(FLAG_EVENT::SELECTABLE)
 {
 }
 

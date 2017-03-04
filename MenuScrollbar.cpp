@@ -1,8 +1,6 @@
 #include "MenuScrollbar.hpp"
 
-
-
-MenuScrollbar::MenuScrollbar()
+MenuScrollbar::MenuScrollbar() : ABasicElement(FLAG_EVENT::EVENT_NOTHING)
 {
 }
 

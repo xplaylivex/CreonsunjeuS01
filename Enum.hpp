@@ -18,6 +18,15 @@ enum KeyConstants {
 	SLIME
 };
 
+enum FLAG_EVENT {
+	EVENT_NOTHING = 0x0,
+	CLICKABLE = 0x1,
+	INPUTABLE = 0x2,
+	SCROLLABLE = 0x4,
+	SELECTABLE = 0x8,
+	CLOSED_WINDOW = 0x10
+};
+
 enum SoundConstants {
 	NO_SOUND = 0,
 	FIRE_SOUND,

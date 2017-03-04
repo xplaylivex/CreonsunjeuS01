@@ -1,8 +1,6 @@
 #include "AMenuArrow.hpp"
 
-
-
-AMenuArrow::AMenuArrow()
+AMenuArrow::AMenuArrow() : ABasicElement(FLAG_EVENT::CLICKABLE)
 {
 }
 

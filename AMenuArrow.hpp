@@ -1,7 +1,7 @@
 #pragma once
-#include "AClickable.hpp"
+#include "ABasicElement.hpp"
 
-class AMenuArrow : public AClickable
+class AMenuArrow : public ABasicElement
 {
 public:
 	AMenuArrow();
